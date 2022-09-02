@@ -26,3 +26,19 @@ SELECT NAME FROM STUDENTS WHERE MARKS > 75 ORDER BY SUBSTR(NAME, LENGTH(NAME)-2,
 ```sql
 select name from Employee ORDER BY name ASC;
 ```
+
+[Employee Salary](https://www.hackerrank.com/challenges/salary-of-employees/problem)
+
+### Write a query that prints a list of employee names (i.e.: the name attribute) for employees in Employee having a salary greater than per month who have been employees for less than months. Sort your result by ascending employee_id.
+
+```sql
+SELECT NAME FROM EMPLOYEE WHERE SALARY > 2000  AND MONTHS < 10 ORDER BY EMPLOYEE_ID;
+```
+
+[Japan Population](https://www.hackerrank.com/challenges/japan-population/problem)
+
+### Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
+
+```sql
+select SUM(POPULATION) from CITY where COUNTRYCODE='JPN';
+```
